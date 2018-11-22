@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <WebView
+        android:layout_width="290dp"
+        android:layout_height="430dp"
+        android:id="@+id/webView"
+        android:layout_marginLeft="30dp">
+
+    </WebView>
+
+    <ImageView
+        android:id="@+id/popup_web_close"
+        android:layout_marginLeft="0dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_close_btn_nor"
+        android:scaleType="fitXY"
+        tools:src="@drawable/ic_close_btn_nor"/>
+
+
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="343dp"
+    android:layout_height="373dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="135dp">
+
+
+    <TabHost
+        android:id="@+id/tabHost1"
+        android:layout_width="266dp"
+        android:layout_height="373dp"
+        android:background="#ffffffff"
+        android:layout_marginLeft="47dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@android:id/tabs">
+            </TabWidget>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@android:id/tabcontent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/content1">
+
+
+                    <fragment
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:name = "com.i4vine.ryufragment.FragmentFashionTab1"
+                        android:id="@+id/fragment_fashiontab1"
+                        tools:layout="@layout/fragment_fashiontab1"/>
+
+
+                </LinearLayout>
+<!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/content2">
+
+                    <fragment
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:name="com.i4vine.ryufragment.FragmentFashionTab2"
+                        android:id="@+id/fragment_fashiontab2"
+                        tools:layout="@layout/fragment_fashiontab2"/>
+                </LinearLayout> -->
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+    <LinearLayout
+        android:layout_width="30dp"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:id="@+id/popup_tab_close"
+            android:layout_marginLeft="0dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_close_btn_nor"
+            android:scaleType="fitXY"
+            tools:src="@drawable/ic_close_btn_nor"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+<!--
+   android:layout_width="350dp"
+    android:layout_height="290dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="150dp">
+
+
+    <TabHost
+        android:id="@+id/tabHost1"
+        android:layout_width="290dp"
+        android:layout_height="290dp"
+        android:background="#ffffffff"
+        android:layout_marginLeft="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@android:id/tabs">
+            </TabWidget>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@android:id/tabcontent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/content1">
+
+
+                    <fragment
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:name = "com.i4vine.ryufragment.FragmentFashionTab1"
+                        android:id="@+id/fragment_fashiontab1"
+                        tools:layout="@layout/fragment_fashiontab1"/>
+
+
+                </LinearLayout>
+
+    </FrameLayout>
+    </LinearLayout>
+    </TabHost>
+
+<LinearLayout
+android:layout_width="30dp"
+android:layout_height="30dp">
+
+<ImageView
+    android:id="@+id/popup_tab_close"
+    android:layout_marginLeft="0dp"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:src="@drawable/ic_close_btn_nor"
+    android:scaleType="fitXY"
+    tools:src="@drawable/ic_close_btn_nor"/>
+</LinearLayout>
+
+-->

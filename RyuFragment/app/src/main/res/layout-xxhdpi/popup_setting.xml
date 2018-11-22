@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="290dp"
+        android:layout_height="550dp"
+        android:orientation="vertical"
+        android:id="@+id/set1"
+        android:background="#ffffffff"
+        android:layout_marginLeft="30dp">
+
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="400dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="50dp"
+                android:textSize="16dp"
+                android:layout_marginBottom="5dp"
+                android:background="#ffbbbbbb"
+                android:gravity="center"
+                android:text="날씨정보 위치 설정, 아래 지역 터치시 설정"/>
+
+            <LinearLayout
+                android:layout_width="290dp"
+                android:layout_height="350dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:id="@+id/local1"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="강남구"
+                        android:textSize="13dp"
+                        android:layout_marginRight="6dp" />
+
+                    <TextView
+                        android:id="@+id/local2"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="강동구"
+                        android:textSize="13dp"
+                        android:layout_marginRight="6dp"/>
+
+                    <TextView
+                        android:id="@+id/local3"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="강북구"
+                        android:textSize="13dp"
+                        android:layout_marginRight="6dp"/>
+
+                    <TextView
+                        android:id="@+id/local4"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="강서구"
+                        android:textSize="13dp"
+                        android:layout_marginRight="6dp"/>
+
+                    <TextView
+                        android:id="@+id/local5"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="관악구"
+                        android:textSize="13dp"
+                        android:layout_marginRight="6dp"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:id="@+id/local6"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="광진구"
+                        android:textSize="13dp"
+                        android:layout_marginRight="6dp"/>
+
+                    <TextView
+                        android:id="@+id/local7"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="구로구"
+                        android:textSize="13dp"
+                        android:layout_marginRight="6dp"/>
+
+                    <TextView
+                        android:id="@+id/local8"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="금천구"
+                        android:textSize="13dp"
+                        android:layout_marginRight="6dp"/>
+
+                    <TextView
+                        android:id="@+id/local9"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="노원구"
+                        android:textSize="13dp"
+                        android:layout_marginRight="6dp"/>
+
+                    <TextView
+                        android:id="@+id/local10"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="도봉구"
+                        android:textSize="13dp"
+                        android:layout_marginRight="6dp"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:id="@+id/local11"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="동대문구"
+                        android:textSize="13dp"
+                        android:layout_marginRight="6dp"/>
+
+                    <TextView
+                        android:id="@+id/local12"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="동작구"
+                        android:textSize="13dp"
+                        android:layout_marginRight="6dp"/>
+
+                    <TextView
+                        android:id="@+id/local13"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="마포구"
+                        android:textSize="13dp"
+                        android:layout_marginRight="6dp"/>
+
+
+                    <TextView
+                        android:id="@+id/local14"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="서대문구"
+                        android:textSize="13dp"
+                        android:layout_marginRight="6dp"/>
+
+                    <TextView
+                        android:id="@+id/local15"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="서초구"
+                        android:textSize="13dp"
+                        android:layout_marginRight="6dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/local16"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="성동구"
+                        android:textSize="13dp"
+                        android:layout_marginRight="6dp"/>
+
+                    <TextView
+                        android:id="@+id/local17"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="성북구"
+                        android:textSize="13dp"
+                        android:layout_marginRight="6dp"/>
+
+                    <TextView
+                        android:id="@+id/local18"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="송파구"
+                        android:textSize="13dp"
+                        android:layout_marginRight="6dp"/>
+
+                    <TextView
+                        android:id="@+id/local19"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="양천구"
+                        android:textSize="13dp"
+                        android:layout_marginRight="6dp"/>
+
+                    <TextView
+                        android:id="@+id/local20"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="영등포구"
+                        android:textSize="13dp"
+                        android:layout_marginRight="6dp"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="50dp">
+
+
+                    <TextView
+                        android:id="@+id/local21"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="용산구"
+                        android:textSize="13dp"
+                        android:layout_marginRight="6dp"/>
+
+                    <TextView
+                        android:id="@+id/local22"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="은평구"
+                        android:textSize="13dp"
+                        android:layout_marginRight="6dp"/>
+
+                    <TextView
+                        android:id="@+id/local23"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="종로구"
+                        android:textSize="13dp"
+                        android:layout_marginRight="6dp"/>
+
+                    <TextView
+                        android:id="@+id/local24"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="중구"
+                        android:textSize="13dp"
+                        android:layout_marginRight="6dp"/>
+
+                    <TextView
+                        android:id="@+id/local25"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="중량구"
+                        android:textSize="13dp"
+                        android:layout_marginRight="6dp"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/local26"
+                        android:layout_width="130dp"
+                        android:layout_height="50dp"
+                        android:text="Los Angeles/CA"
+                        android:textSize="13dp"/>
+
+                    <TextView
+                        android:id="@+id/local27"
+                        android:layout_width="130dp"
+                        android:layout_height="50dp"
+                        android:text="Las Vegas/NV"
+                        android:textSize="13dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/local28"
+                        android:layout_width="130dp"
+                        android:layout_height="50dp"
+                        android:text="Newyork City/NY "
+                        android:textSize="13dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="50dp"
+                android:textSize="16dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:text="언어 설정, 아래 언어 터치시 설정"
+                android:background="#ffbbbbbb"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="290dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lan_ko"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:text="한국어"
+                    android:textSize="13dp"/>
+
+                <TextView
+                    android:id="@+id/lan_en"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:text="영어"
+                    android:textSize="13dp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/popup_setting_close"
+        android:layout_marginLeft="0dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_close_btn_nor"
+        android:scaleType="fitXY"
+        tools:src="@drawable/ic_close_btn_nor"/>
+
+
+</LinearLayout>

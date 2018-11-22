@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="326dp"
+    android:layout_height="480dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="266dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="capture"
+            android:id="@+id/capture"></Button>
+          <!--  android:onClick="onCapture"/-->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/capture"
+            android:text="torch"
+            android:id="@+id/torch"/>
+
+
+
+        <SurfaceView
+            android:layout_width="266dp"
+            android:layout_height="match_parent"
+            android:id="@+id/surfaceView"
+            android:layout_below="@id/previewFrame" />
+
+
+        <FrameLayout
+            android:layout_width="266dp"
+            android:layout_height="match_parent"
+            android:id="@+id/previewFrame"
+            android:visibility="invisible">
+
+
+        </FrameLayout>
+
+
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:id="@+id/previewCnt"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="105dp"
+            android:textAlignment="center"
+            android:text=""
+            android:textSize="200dp"
+            android:textColor="#FFFFFFFF"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="30dp"
+        android:layout_height="30dp">
+        <ImageView
+            android:id="@+id/popup_preview_close"
+            android:layout_marginLeft="0dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_close_btn_nor"
+            android:scaleType="fitXY"
+            tools:src="@drawable/ic_close_btn_nor"/>
+    </LinearLayout>
+</LinearLayout>
+
+<!--
+    android:layout_width="350dp"
+    android:layout_height="510dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="290dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="capture"
+            android:id="@+id/capture"></Button>
+
+
+<SurfaceView
+android:layout_width="290dp"
+android:layout_height="match_parent"
+android:id="@+id/surfaceView"
+android:layout_below="@id/previewFrame" />
+
+
+<FrameLayout
+android:layout_width="290dp"
+android:layout_height="match_parent"
+android:id="@+id/previewFrame"
+android:visibility="invisible">
+
+
+</FrameLayout>
+
+
+
+<TextView
+android:layout_width="200dp"
+android:layout_height="300dp"
+android:id="@+id/previewCnt"
+android:layout_marginLeft="45dp"
+android:layout_marginTop="105dp"
+android:textAlignment="center"
+android:text=""
+android:textSize="200dp"
+android:textColor="#FFFFFFFF"
+android:visibility="invisible"/>
+    </RelativeLayout>
+
+<LinearLayout
+android:layout_width="30dp"
+android:layout_height="30dp">
+<ImageView
+    android:id="@+id/popup_preview_close"
+    android:layout_marginLeft="0dp"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:src="@drawable/ic_close_btn_nor"
+    android:scaleType="fitXY"
+    tools:src="@drawable/ic_close_btn_nor"/>
+</LinearLayout>
+-->

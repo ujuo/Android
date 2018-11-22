@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="326dp"
+    android:layout_height="480dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/left_btn"
+        android:layout_marginTop="225dp"
+        android:layout_marginLeft="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_left_btn_nor"
+        tools:src = "@drawable/ic_left_btn_nor"/>
+
+    <!-- android:layout_gravity="center"-->
+    <RelativeLayout
+        android:layout_width="266dp"
+        android:layout_height="480dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/popup_photo"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:id="@+id/dust_btn"
+            android:layout_marginTop="445dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_dust_btn"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="30dp"
+        android:layout_height="480dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/popup_photo_close"
+            android:layout_marginLeft="0dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_close_btn_nor"
+            android:scaleType="fitXY"
+            tools:src="@drawable/ic_close_btn_nor"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/right_btn"
+            android:layout_marginTop="195dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_right_btn_nor"
+            tools:src = "@drawable/ic_right_btn_nor"/>
+    </LinearLayout>
+
+
+
+
+    <!--view
+        android:layout_width="370dp"
+        android:layout_height="370dp"
+        class="android.support.v4.view.ViewPager"
+        android:scaleType="fitXY"
+        android:id="@+id/view"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/-->
+</LinearLayout>
+
+
+
+<!--
+   android:layout_width="350dp"
+    android:layout_height="290dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/left_btn"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_left_btn_nor"
+        tools:src = "@drawable/ic_left_btn_nor"/>
+
+<RelativeLayout
+android:layout_width="290dp"
+android:layout_height="290dp">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/popup_photo"
+    android:scaleType="fitXY"/>
+
+<ImageView
+    android:layout_width="35dp"
+    android:layout_height="45dp"
+    android:id="@+id/dust_btn"
+    android:layout_marginTop="245dp"
+    android:scaleType="fitXY"
+    android:src="@drawable/ic_dust_btn"/>
+</RelativeLayout>
+
+<LinearLayout
+android:layout_width="30dp"
+android:layout_height="290dp"
+android:orientation="vertical">
+
+<ImageView
+    android:id="@+id/popup_photo_close"
+    android:layout_marginLeft="0dp"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:src="@drawable/ic_close_btn_nor"
+    android:scaleType="fitXY"
+    tools:src="@drawable/ic_close_btn_nor"/>
+
+<ImageView
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:id="@+id/right_btn"
+    android:layout_marginTop="100dp"
+    android:scaleType="fitXY"
+    android:src="@drawable/ic_right_btn_nor"
+    tools:src = "@drawable/ic_right_btn_nor"/>
+</LinearLayout>
+-->

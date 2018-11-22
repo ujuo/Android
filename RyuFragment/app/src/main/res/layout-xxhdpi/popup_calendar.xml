@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="510dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="290dp"
+        android:layout_height="510dp"
+        android:orientation="vertical"
+        android:background="#ffffffff"
+        android:layout_marginLeft="30dp">
+        <TextView
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cal_month"
+            android:gravity="center"
+            android:text = "January"
+            android:textSize="15dp"/>
+
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/cal_week"
+            android:background="#ffdddddd">
+
+            <TextView
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/day1"
+                android:gravity="center"
+                android:text="Sun"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="41dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/day2"
+                android:gravity="center"
+                android:text="Mon"
+                android:textSize="10dp"/>
+
+            <TextView
+                android:layout_width="41dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/day3"
+                android:gravity="center"
+                android:text="Tue"
+                android:textSize="10dp"/>
+
+            <TextView
+                android:layout_width="41dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/day4"
+                android:gravity="center"
+                android:text="Wed"
+                android:textSize="10dp"/>
+
+
+            <TextView
+                android:layout_width="41dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/day5"
+                android:gravity="center"
+                android:text="Thu"
+                android:textSize="10dp"/>
+
+            <TextView
+                android:layout_width="41dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/day6"
+                android:gravity="center"
+                android:text="Fri"
+                android:textSize="10dp"/>
+
+
+            <TextView
+                android:layout_width="41dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/day7"
+                android:gravity="center"
+                android:text="Sat"
+                android:textSize="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/cal_day"
+            android:background="#ffdddddd">
+
+            <TextView
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/day_1"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="13dp" />
+
+            <TextView
+                android:layout_width="41dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/day_2"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="13dp" />
+
+            <TextView
+                android:layout_width="41dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/day_3"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="13dp" />
+
+            <TextView
+                android:layout_width="41dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/day_4"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="13dp" />
+
+
+            <TextView
+                android:layout_width="41dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/day_5"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="13dp" />
+
+            <TextView
+                android:layout_width="41dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/day_6"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="13dp" />
+
+
+            <TextView
+                android:layout_width="41dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/day_7"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/scroll_cal">
+
+            <RelativeLayout
+                android:layout_width="290dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/day_time">
+
+                    <LinearLayout
+                        android:layout_width="290dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_time0"
+                            android:gravity="left"
+                            tools:text="24:24"
+                            tools:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/plan_desc0"
+                            android:gravity="left"
+                            tools:text="new plan"
+                            tools:textSize="13dp"/>
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_fashion0"
+                            android:gravity="center"
+                            android:visibility="invisible"
+                            tools:text="Fashon"
+                            tools:textSize="8dp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="290dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_time1"
+                            android:gravity="left"
+                            tools:text="1"
+                            tools:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/plan_desc1"
+                            android:gravity="left"
+                            tools:text="new plan"
+                            tools:textSize="13dp"/>
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_fashion1"
+                            android:gravity="center"
+                            android:visibility="invisible"
+                            tools:text="Fashon"
+                            tools:textSize="8dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_time2"
+                            android:gravity="left"
+                            tools:text="1"
+                            tools:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/plan_desc2"
+                            android:gravity="left"
+                            tools:text="new plan"
+                            tools:textSize="13dp"/>
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_fashion2"
+                            android:gravity="center"
+                            android:visibility="invisible"
+                            tools:text="Fashon"
+                            tools:textSize="8dp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_time3"
+                            android:gravity="left"
+                            tools:text="1"
+                            tools:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/plan_desc3"
+                            android:gravity="left"
+                            tools:text="new plan"
+                            tools:textSize="13dp"/>
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_fashion3"
+                            android:gravity="center"
+                            android:visibility="invisible"
+                            tools:text="Fashon"
+                            tools:textSize="8dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_time4"
+                            android:gravity="left"
+                            tools:text="1"
+                            tools:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/plan_desc4"
+                            android:gravity="left"
+                            tools:text="new plan"
+                            tools:textSize="13dp"/>
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_fashion4"
+                            android:gravity="center"
+                            android:visibility="invisible"
+                            tools:text="Fashon"
+                            tools:textSize="8dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_time5"
+                            android:gravity="left"
+                            tools:text="1"
+                            tools:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/plan_desc5"
+                            android:gravity="left"
+                            tools:text="new plan"
+                            tools:textSize="13dp"/>
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_fashion5"
+                            android:gravity="center"
+                            android:visibility="invisible"
+                            tools:text="Fashon"
+                            tools:textSize="8dp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_time6"
+                            android:gravity="left"
+                            tools:text="1"
+                            tools:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/plan_desc6"
+                            android:gravity="left"
+                            tools:text="new plan"
+                            tools:textSize="13dp"/>
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_fashion6"
+                            android:gravity="center"
+                            android:visibility="invisible"
+                            tools:text="Fashon"
+                            tools:textSize="8dp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_time7"
+                            android:gravity="left"
+                            tools:text="1"
+                            tools:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/plan_desc7"
+                            android:gravity="left"
+                            tools:text="new plan"
+                            tools:textSize="13dp"/>
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_fashion7"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            tools:text="Fashon"
+                            tools:textSize="8dp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_time8"
+                            android:gravity="left"
+                            tools:text="1"
+                            tools:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/plan_desc8"
+                            android:gravity="left"
+                            tools:text="new plan"
+                            tools:textSize="13dp"/>
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_fashion8"
+                            android:gravity="center"
+                            android:visibility="invisible"
+                            tools:text="Fashon"
+                            tools:textSize="8dp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_time9"
+                            android:gravity="left"
+                            tools:text="1"
+                            tools:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/plan_desc9"
+                            android:gravity="left"
+                            tools:text="new plan"
+                            tools:textSize="13dp"/>
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_fashion9"
+                            android:gravity="center"
+                            android:visibility="invisible"
+                            tools:text="Fashon"
+                            tools:textSize="8dp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_time10"
+                            android:gravity="left"
+                            tools:text="1"
+                            tools:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/plan_desc10"
+                            android:gravity="left"
+                            tools:text="new plan"
+                            tools:textSize="13dp"/>
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_fashion10"
+                            android:gravity="center"
+                            android:visibility="invisible"
+                            tools:text="Fashion"
+                            tools:textSize="8dp"/>
+                    </LinearLayout>
+
+                    ///////
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_time11"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            tools:text="1"
+                            tools:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_desc11"
+                            android:gravity="left"
+                            android:layout_weight="5"
+                            tools:text="new plan"
+                            tools:textSize="13dp"/>
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_fashion11"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            tools:text="Fashon"
+                            tools:textSize="8dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_time12"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            tools:text="1"
+                            tools:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_desc12"
+                            android:gravity="left"
+                            android:layout_weight="5"
+                            tools:text="new plan"
+                            tools:textSize="13dp"/>
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_fashion12"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            tools:text="Fashon"
+                            tools:textSize="8dp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_time13"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            tools:text="1"
+                            tools:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_desc13"
+                            android:gravity="left"
+                            android:layout_weight="5"
+                            tools:text="new plan"
+                            tools:textSize="13dp"/>
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_fashion13"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            tools:text="Fashon"
+                            tools:textSize="8dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_time14"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            tools:text="1"
+                            tools:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_desc14"
+                            android:gravity="left"
+                            android:layout_weight="5"
+                            tools:text="new plan"
+                            tools:textSize="13dp"/>
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_fashion14"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            tools:text="Fashon"
+                            tools:textSize="8dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_time15"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            tools:text="1"
+                            tools:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_desc15"
+                            android:gravity="left"
+                            android:layout_weight="5"
+                            tools:text="new plan"
+                            tools:textSize="13dp"/>
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_fashion15"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            tools:text="Fashon"
+                            tools:textSize="8dp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_time16"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            tools:text="1"
+                            tools:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_desc16"
+                            android:gravity="left"
+                            android:layout_weight="5"
+                            tools:text="new plan"
+                            tools:textSize="13dp"/>
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_fashion16"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            tools:text="Fashon"
+                            tools:textSize="8dp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_time17"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            tools:text="1"
+                            tools:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_desc17"
+                            android:gravity="left"
+                            android:layout_weight="5"
+                            tools:text="new plan"
+                            tools:textSize="13dp"/>
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_fashion17"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            tools:text="Fashon"
+                            tools:textSize="8dp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_time18"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            tools:text="1"
+                            tools:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_desc18"
+                            android:gravity="left"
+                            android:layout_weight="5"
+                            tools:text="new plan"
+                            tools:textSize="13dp"/>
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_fashion18"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            tools:text="Fashon"
+                            tools:textSize="8dp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_time19"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            tools:text="1"
+                            tools:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_desc19"
+                            android:gravity="left"
+                            android:layout_weight="5"
+                            tools:text="new plan"
+                            tools:textSize="13dp"/>
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_fashion19"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            tools:text="Fashon"
+                            tools:textSize="8dp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_time20"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            tools:text="1"
+                            tools:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_desc20"
+                            android:gravity="left"
+                            android:layout_weight="5"
+                            tools:text="new plan"
+                            tools:textSize="13dp"/>
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_fashion20"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            tools:text="Fashon"
+                            tools:textSize="8dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_time21"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            tools:text="1"
+                            tools:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_desc21"
+                            android:gravity="left"
+                            android:layout_weight="5"
+                            tools:text="new plan"
+                            tools:textSize="13dp"/>
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_fashion21"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            tools:text="Fashon"
+                            tools:textSize="8dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_time22"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            tools:text="1"
+                            tools:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_desc22"
+                            android:gravity="left"
+                            android:layout_weight="5"
+                            tools:text="new plan"
+                            tools:textSize="13dp"/>
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_fashion22"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            tools:text="Fashon"
+                            tools:textSize="8dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_time23"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            tools:text="1"
+                            tools:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_desc23"
+                            android:gravity="left"
+                            android:layout_weight="5"
+                            tools:text="new plan"
+                            tools:textSize="13dp"/>
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_fashion23"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            tools:text="Fashon"
+                            tools:textSize="8dp"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="30dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/popup_calendar_close"
+            android:layout_marginLeft="0dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_close_btn_nor"
+            android:scaleType="fitXY"
+            tools:src="@drawable/ic_close_btn_nor"/>
+    </LinearLayout>
+</LinearLayout>

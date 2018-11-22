@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.i4vine.ryufragment">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.audio.output" android:required="true"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="true"/>
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+
+        </activity>
+
+        <activity android:name=".Standby"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+
+        </activity>
+
+        <activity android:name=".Intro"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+<!--
+        <activity android:name=".SleepMode"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+
+        </activity>
+-->
+        <activity android:name=".PopupCloth"
+            android:theme = "@style/Theme.Transparent"> <!--@android:style/Theme.Material.Light.Dialog"-->
+            <intent-filter>
+                <action android:name = "com.i4vine.ryufragment.intentfilter.popup"/>
+                <category android:name = "android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+  <!--      <activity android:name=".PopupAir"
+            android:theme = "@android:style/Theme.Material.Light.Dialog">
+            <intent-filter>
+                <action android:name = "com.i4vine.ryufragment.intentfilter.popup"/>
+                <category android:name = "android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+-->
+        <activity android:name=".PopupPreview"
+            android:theme="@style/Theme.Transparent"> <!--@android:style/Theme.Material.Light.Dialog"-->
+            <intent-filter>
+                <action android:name="com.i4vine.ryufragment.intentfilter.popup"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".PopupPhoto"
+            android:theme="@style/Theme.Transparent"> <!--@android:style/Theme.Material.Light.Dialog"-->
+            <intent-filter>
+                <action android:name="com.i4vine.ryufragment.intentfilter.popup"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".PopupWeather"
+            android:theme="@style/Theme.Transparent"> <!--@android:style/Theme.Material.Light.Dialog"-->
+
+            <intent-filter>
+                <action android:name="com.i4vine.ryufragment.intentfilter.popup"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".PopupCalendar"
+            android:theme="@style/Theme.Transparent"> <!--@android:style/Theme.Material.Light.Dialog"-->
+            <intent-filter>
+                <action android:name="com.i4vine.ryufragment.intentfilter.popup"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".PopupWeb"
+            android:theme="@style/Theme.Transparent"> <!--@android:style/Theme.Material.Light.Dialog"-->
+            <intent-filter>
+                <action android:name="com.i4vine.ryufragment.intentfilter.popup"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+    <!--    <activity android:name=".PopupSTTS"
+            android:theme="@android:style/Theme.Material.Light.Dialog">
+            <intent-filter>
+                <action android:name="com.i4vine.ryufragment.intentfilter.popup"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>-->
+
+        <activity android:name=".PopupFashionTab"
+            android:theme = "@style/Theme.Transparent"> <!--@android:style/Theme.Material.Light.Dialog"-->
+            <intent-filter>
+                <action android:name = "com.i4vine.ryufashiotab.intentfilter.popup"/>
+                <category android:name = "android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".PopupSetting"
+            android:theme = "@style/Theme.Transparent"> <!--@android:style/Theme.Material.Light.Dialog"-->
+            <intent-filter>
+                <action android:name = "com.i4vine.ryufashiotab.intentfilter.popup"/>
+                <category android:name = "android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
